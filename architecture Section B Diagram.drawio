@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.6">
+  <diagram name="Page-1" id="27hqkqz1j9sOVjFSipjY">
+    <mxGraphModel dx="3662" dy="4065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-1" target="wfNiFpn1Ms7DDixurBHB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-1" value="DATA SOURCES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-385" y="-200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-2" value="&amp;nbsp;Government Agency Data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-385" y="-110" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-4" target="wfNiFpn1Ms7DDixurBHB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-4" value="Ingestion Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="-200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-5" target="wfNiFpn1Ms7DDixurBHB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-5" value="Data Transformation Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-6" value="Azure Data Factory-ETL processes&lt;div&gt;&amp;nbsp;Azure Databricks-data transformation&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="-100" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-7" target="wfNiFpn1Ms7DDixurBHB-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="-170" />
+              <mxPoint x="340" y="-170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-7" target="wfNiFpn1Ms7DDixurBHB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-7" value="Data Warehouse (DWH)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-8" value="Subset of&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;DWH&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="-230" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-9" target="wfNiFpn1Ms7DDixurBHB-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;shape=link;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-9" target="wfNiFpn1Ms7DDixurBHB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-9" value="Data Mart (DM)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="-200" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-11" target="wfNiFpn1Ms7DDixurBHB-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-11" value="Reporting &amp;amp; Business Intelligence (BI)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-100" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-12" value="Power BI (for creating dashboards and visualizations)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="580" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-9" target="wfNiFpn1Ms7DDixurBHB-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-15" target="wfNiFpn1Ms7DDixurBHB-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="125" />
+              <mxPoint x="630" y="125" />
+              <mxPoint x="630" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-15" value="Machine Learning &amp;amp; Analytics" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-10" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-24" value="&lt;div&gt;Azure Machine Learning&amp;nbsp;&lt;/div&gt;&lt;div&gt;Python/R (custom ML algorithms)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="140" y="80" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-25" target="wfNiFpn1Ms7DDixurBHB-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-25" value="Advanced Analytics" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="600" y="180" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-28" value="&lt;div&gt;Azure Synapse Analytics ( advanced analytics)&lt;/div&gt;&lt;div&gt;R or Python (statistical analysis)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="540" y="220" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-29" value="Azure Data Factory-data extraction .&lt;div&gt;Apache Kafka-for streaming data&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="-110" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-31" value="Azure Synapse Analytics-sorting data&lt;div&gt;&amp;nbsp;Azure SQL Database-relational storage&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="310" y="-110" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="wfNiFpn1Ms7DDixurBHB-2" target="wfNiFpn1Ms7DDixurBHB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfNiFpn1Ms7DDixurBHB-43" value="END" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="860" y="40" width="70" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
