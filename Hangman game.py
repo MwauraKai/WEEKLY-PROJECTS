@@ -28,6 +28,7 @@ def choose_word(difficulty):
 # Function to draw gallows
 def draw_gallows():
     pen.penup()
+    pen.clear()
     pen.goto(-100, -100)  # Base of the gallows
     pen.pendown()
     pen.setheading(90)  # Vertical pole
@@ -92,7 +93,7 @@ def draw_right_leg():
     pen.setheading(315)  # Face down-right
     pen.pendown()
     pen.forward(40)  # Draw right leg
-    
+
 # Function to handle the game
 def play_game():
     # Clear screen for a fresh start
