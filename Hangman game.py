@@ -14,7 +14,7 @@ screen.title("Hangman Game - Turtle Visualization")
 # Create turtle for drawing
 pen = turtle.Turtle()
 pen.hideturtle()
-pen.speed(3)
+pen.speed(0)
 
 # Function to choose word based on difficulty
 def choose_word(difficulty):
@@ -28,63 +28,78 @@ def choose_word(difficulty):
 # Function to draw gallows
 def draw_gallows():
     pen.penup()
-    pen.goto(-200, -100)
+    pen.goto(-100, -100)  # Base of the gallows
     pen.pendown()
-    pen.setheading(0)
-    pen.forward(100)  # Base
-    pen.left(90)
-    pen.forward(200)  # Pole
-    pen.left(90)
-    pen.forward(50)   # Top horizontal line
-    pen.left(90)
-    pen.forward(20)   # Short vertical line for the rope
+    pen.setheading(90)  # Vertical pole
+    pen.forward(200)  # Gallows pole
+    pen.right(90)  # Horizontal pole
+    pen.forward(100)  # Top beam
+    pen.right(90)  # Hanging line
+    pen.forward(50)
+
+# Function to draw the hangman parts
+def draw_hangman(attempts_left):
+    hangman_parts = [
+        draw_head, draw_body, draw_left_arm, 
+        draw_right_arm, draw_left_leg, draw_right_leg
+    ]
+    if 0 <= attempts_left < len(hangman_parts):
+        hangman_parts[5 - attempts_left]()  # Draw corresponding part
 
 # Function to draw the head of the hangman
 def draw_head():
     pen.penup()
-    pen.goto(-100, 40)
+    pen.goto(-50, 50)  # Position for the head (below the rope)
     pen.pendown()
-    pen.circle(20)
+    pen.circle(20)  # Draw the head
 
-# Function to draw the body of the hangman
+# Function to draw the body
 def draw_body():
     pen.penup()
-    pen.goto(-100, 40)
+    pen.goto(-50, 50)  # Start at the neck (bottom of the head)
+    pen.setheading(270)  # Face down
     pen.pendown()
-    pen.setheading(270)  # Facing down
-    pen.forward(60)
+    pen.forward(60)  # Draw the body
 
-# Function to draw left arm
+# Function to draw the left arm
 def draw_left_arm():
     pen.penup()
-    pen.goto(-100, 20)
+    pen.goto(-50, 30)  # Shoulder position (on the body)
+    pen.setheading(180)  # Face left
     pen.pendown()
-    pen.setheading(180)  # Left arm
-    pen.forward(40)
+    pen.forward(40)  # Draw left arm
 
-# Function to draw right arm
+# Function to draw the right arm
 def draw_right_arm():
     pen.penup()
-    pen.goto(-100, 20)
+    pen.goto(-50, 30)  # Shoulder position (on the body)
+    pen.setheading(0)  # Face right
     pen.pendown()
-    pen.setheading(0)  # Right arm
-    pen.forward(40)
+    pen.forward(40)  # Draw right arm
 
-# Function to draw left leg
+# Function to draw the left leg
 def draw_left_leg():
     pen.penup()
-    pen.goto(-100, -20)
+    pen.goto(-50, -10)  # Hips position (bottom of the body)
+    pen.setheading(225)  # Face down-left
     pen.pendown()
-    pen.setheading(225)  # Left leg
-    pen.forward(40)
+    pen.forward(40)  # Draw left leg
 
-# Function to draw right leg
+# Function to draw the right leg
 def draw_right_leg():
     pen.penup()
-    pen.goto(-100, -20)
+    pen.goto(-50, -10)  # Hips position (bottom of the body)
+    pen.setheading(315)  # Face down-right
     pen.pendown()
-    pen.setheading(45)  # Right leg
-    pen.forward(40)
+    pen.forward(40)  # Draw right leg
+    
+# Function to handle the game
+def play_game():
+    # Clear screen for a fresh start
+    screen.reset()
+    screen.setup(width=600, height=400)
+    screen.title("Hangman Game - Turtle Visualization")
+    pen.speed(0)  # Reset speed after reset
 
 # Function to handle the game
 def play_game():
